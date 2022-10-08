@@ -1,0 +1,24 @@
+let numeroDigitado , menorNumero=50, maiorNumero=0 , numeroErrado = 0
+
+    for(i=0; i< 10; i++){
+
+        numeroDigitado = Number(prompt("digite um numero entre 0 e 50:"))
+
+            if(numeroDigitado > 0 && numeroDigitado < 50){
+           
+                            if(numeroDigitado > maiorNumero){
+                                maiorNumero = numeroDigitado
+
+                            }
+
+                            if(numeroDigitado < menorNumero){
+                                menorNumero = numeroDigitado
+
+                            }
+
+            } else {
+                    numeroErrado++
+            }                  
+    }
+
+    alert(`o maior numero digitado foi: ${maiorNumero}\nO menor numero numero digitado foi: ${menorNumero}\nForam descartados ${numeroErrado} numeros que nao estavam entre 0 e 50.`)
